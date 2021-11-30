@@ -1,4 +1,9 @@
-# Byte-compiled / optimized / DLL files
+
+# Project Specific
+Sample/
+
+# Byte-compiled / optimized /
+DLL files
 __pycache__/
 *.py[cod]
 *$py.class
