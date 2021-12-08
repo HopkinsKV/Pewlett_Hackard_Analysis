@@ -1,4 +1,44 @@
-# Pewlett_Hackard_Analysis
+# Pewlett-Hackard Analysis
+Pulling lists of soon-to-be retiring staff, and those eligible for the mentorship program
+
+## Overview
+Analysis over soon-to-be-retired employees to determine the number of retirees per title and who is eligible for the mentorship program.
+</br>
+
+## Results
+#### There is a bulleted list with four major points from the two analysis deliverables. Use images
+
+* Item 1
+* Item 2
+* We identified that we are primarily losing Senior Engineers and Senior Staff.
+* While we have a large amount of Senior Staff (427) eligible for the mentorship program, we have far fewer Senior Engineers (268). [image here?]
+
+## Summary
+
+#### Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
+<br/>
+
+**How many roles will need to be filled as the "silver tsunami" begins to make an impact?**
+> Response Here
+
+New table to show number of roles affected
+<br/><br/>
+
+**Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett-Hackard employees?**
+> Response Here
+In some cases we have sufficient staff to prepare the next generation. 
+    Example of things that are going to be fine.
+
+However, we do not have sufficient Senior Engineers to manage a 1-on-1 mentorship program. We suggest a higer rate of mentee to mentor in the following departments:
+    List some departments that need work
+
+Create/Insert table to show mentor-mentee relationship
+
+
+
+
+
+Images & Code sample:
 
 
 Current Department Breakdown  
@@ -33,5 +73,6 @@ JOIN titles AS ttl
 	WHERE de.to_date = ('9999-01-01') AND dpt.dept_name = 'Development' OR dpt.dept_name = 'Production' OR dpt.dept_name ='Sales'
 GROUP BY dpt.dept_name, ttl.title, de.dept_no
 ORDER BY array_position(ARRAY['Development', 'Production', 'Sales']::varchar[], dpt.dept_name), dpt.count DESC;
+
 
 
